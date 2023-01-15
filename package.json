@@ -97,14 +97,16 @@
     "watch-css-docs": "nodemon --watch site/assets/scss/ --ext scss --exec \"npm run css-lint\"",
     "watch-css-test": "nodemon --watch scss/ --ext scss,js --exec \"npm run css-test\"",
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm-run-all js-lint js-compile\"",
-    "watch-js-docs": "nodemon --watch site/assets/js/ --ext js --exec \"npm run js-lint\""
+    "watch-js-docs": "nodemon --watch site/assets/js/ --ext js --exec \"npm run js-lint\"",
+    "js-css-compile": "npm run css-compile && npm run js-compile",
+    "css-w": "sass --watch --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/"
   },
   "peerDependencies": {
     "@popperjs/core": "^2.11.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
+    "@babel/core": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "@popperjs/core": "^2.11.6",
     "@rollup/plugin-babel": "^6.0.3",
@@ -140,7 +142,7 @@
     "lockfile-lint": "^4.10.0",
     "nodemon": "^2.0.20",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.20",
     "postcss-cli": "^10.1.0",
     "rollup": "^3.9.1",
     "rollup-plugin-istanbul": "^4.0.0",

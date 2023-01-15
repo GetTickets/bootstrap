@@ -1,3 +1,6 @@
+// Default variable overrides
+// $primary: red;
+
 @import "mixins/banner";
 @include bsBanner("");
 
@@ -5,6 +8,8 @@
 // scss-docs-start import-stack
 // Configuration
 @import "functions";
+
+
 @import "variables";
 @import "variables-dark";
 @import "maps";
@@ -27,19 +32,19 @@
 @import "nav";
 @import "navbar";
 @import "card";
-@import "accordion";
-@import "breadcrumb";
+// @import "accordion";
+// @import "breadcrumb";
 @import "pagination";
 @import "badge";
 @import "alert";
-@import "progress";
+// @import "progress";
 @import "list-group";
 @import "close";
-@import "toasts";
+// @import "toasts";
 @import "modal";
 @import "tooltip";
-@import "popover";
-@import "carousel";
+// @import "popover";
+// @import "carousel";
 @import "spinners";
 @import "offcanvas";
 @import "placeholders";
@@ -50,3 +55,42 @@
 // Utilities
 @import "utilities/api";
 // scss-docs-end import-stack
+
+.btn-primary-2 {
+       --bs-btn-color: rgb(255, 255, 255);
+       --bs-btn-bg: #027fe9;
+       --bs-btn-border-color: #027fe9;
+       --bs-btn-hover-color: rgb(255, 255, 255);
+       --bs-btn-hover-bg: #2892ec;
+       --bs-btn-hover-border-color: #1b8ceb;
+       --bs-btn-focus-shadow-rgb: 2, 108, 198;
+       --bs-btn-active-color: rgb(255, 255, 255);
+       --bs-btn-active-bg: #3599ed;
+       --bs-btn-active-border-color: #1b8ceb;
+       --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+       --bs-btn-disabled-color: rgb(255, 255, 255);
+       --bs-btn-disabled-bg: #027fe9;
+       --bs-btn-disabled-border-color: #027fe9;
+}
+
+.btn-outline-primary-2 {
+       --bs-btn-color: #027fe9;
+       --bs-btn-border-color: #027fe9;
+       --bs-btn-hover-color: rgb(255, 255, 255);
+       --bs-btn-hover-bg: #027fe9;
+       --bs-btn-hover-border-color: #027fe9;
+       --bs-btn-focus-shadow-rgb: 2, 127, 233;
+       --bs-btn-active-color: #000;
+       --bs-btn-active-bg: #027fe9;
+       --bs-btn-active-border-color: #027fe9;
+       --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+       --bs-btn-disabled-color: #027fe9;
+       --bs-btn-disabled-bg: transparent;
+       --bs-btn-disabled-border-color: #027fe9;
+       --bs-gradient: none;
+}
+
+.btn-primary-2:focus,
+.btn-outline-primary-2:focus {
+       color: rgb(255, 255, 255) !important;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+
+       <!-- bootstrap -->
+       <link rel="stylesheet" href="../dist/css/bootstrap.css">
+
+       <!-- Style -->
+       <link rel="stylesheet" href="sidebar.css">
+
+       <!-- material-symbols-outlined -->
+       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+
+       <nav class="nav-sidebar border-end bg-body-tertiary">
+              <div class="logo-name">
+                     <div class="logo-image">
+                            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="">
+                     </div>
+
+                     <span class="logo_name">CodingLab</span>
+              </div>
+
+              <div class="pt-5 ">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-1 fw-medium">
+                            <li class="nav-item item-sidebar item-sidebar-active border">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 home
+                                          </span>
+                                          <span class="mx-2 span-item">Inicio</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 dashboard
+                                          </span>
+                                          <span class="mx-2 span-item">Dashboard</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 local_mall
+                                          </span>
+                                          <span class="mx-2 span-item">Sucursales</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 apartment
+                                          </span>
+                                          <span class="mx-2 span-item">Departamentos</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 group
+                                          </span>
+                                          <span class="mx-2 span-item">Usuarios</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 tv
+                                          </span>
+                                          <span class="mx-2 span-item">Pantalla</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 format_list_bulleted
+                                          </span>
+                                          <span class="mx-2 span-item">Cola</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 settings
+                                          </span>
+                                          <span class="mx-2 span-item">Configuración</span>
+                                   </a>
+                            </li>
+
+                            <li class="nav-item item-sidebar">
+                                   <a class="nav-link d-flex" aria-current="page" href="#">
+                                          <span class="material-symbols-outlined">
+                                                 confirmation_number
+                                          </span>
+                                          <span class="mx-2 span-item">Tickets</span>
+                                   </a>
+                            </li>
+
+                     </ul>
+
+              </div>
+       </nav>
+
+       <div class="dashboard bg-body">
+              <div class="top bg-body-tertiary shadow-sm">
+                     <span class="material-symbols-outlined sidebar-toggle" id="sidebar-toggle">
+                            menu
+                     </span>
+
+
+                     <div class="search bg-body-secondary rounded-5 border">
+                            <span class="material-symbols-outlined">
+                                   search
+                            </span>
+                            <input type="text" class="input-search bg-body-secondary" placeholder=" Search">
+                     </div>
+
+                     <div class="d-flex">
+                            <div class="dropdown user">
+                                   <!-- <button class="btn btn-secondary dropdown-toggle" type="button"
+                                          data-bs-toggle="dropdown" aria-expanded="false">
+                                          Dropdown button
+                                   </button> -->
+                                   <div class="logo-user cursor-pointer" data-bs-toggle="dropdown">
+                                          <img src="https://avatars.githubusercontent.com/u/68261773?s=400&u=ca09fb7c49600be35a8943b8aba05aa0256a7c84&v=4"
+                                                 alt="">
+                                   </div>
+                                   <ul class="dropdown-menu">
+                                          <li>
+                                                 <a class="dropdown-item d-flex" href="#">
+                                                        <span class="material-symbols-outlined">
+                                                               account_circle
+                                                        </span>
+                                                        <span class="mx-2">Cuenta</span>
+                                                 </a>
+                                          </li>
+
+                                          <li>
+                                                 <a class="dropdown-item d-flex" href="#">
+                                                        <span class="material-symbols-outlined">
+                                                               settings
+                                                        </span>
+                                                        <span class="mx-2">Configuration</span>
+                                                 </a>
+                                          </li>
+
+                                          <li>
+                                                 <a class="dropdown-item d-flex" href="#">
+                                                        <span class="material-symbols-outlined">
+                                                               help
+                                                        </span>
+                                                        <span class="mx-2">Ayuda</span>
+                                                 </a>
+                                          </li>
+
+                                          <li>
+                                                 <a class="dropdown-item d-flex" href="#">
+                                                        <span class="material-symbols-outlined">
+                                                               logout
+                                                        </span>
+                                                        <span class="mx-2">Cerrar session</span>
+                                                 </a>
+                                          </li>
+                                   </ul>
+                            </div>
+                     </div>
+              </div>
+
+              <div class="dash-content">
+                     <div class="container-fluid p-2 pt-3 p-sm-5">
+
+
+                            <h2 class="fw-lighter">Departamentos</h2>
+
+
+                            <input type="text" class="form-control mb-3" placeholder="Search">
+
+                            <button class="btn btn-sm btn-secondary rounded-5">All</button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-5">Active</button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-5">Inacticve</button>
+                            <button class="btn btn-sm btn-outline-secondary rounded-5">Recientes</button>
+
+                            <div class="table-responsive mt-3 mb-3 table-height">
+                                   <table class="table table-striped table-hover">
+                                          <thead class="dis bg-body-secondary table-fixed order-5">
+                                                 <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Departamento</th>
+                                                        <th scope="col">Estado</th>
+                                                        <th scope="col">Ultima modificaion</th>
+                                                        <th scope="col">Usuarios</th>
+                                                 </tr>
+                                          </thead>
+                                          <tbody id="tbody" class="">
+                                                 <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Comercial</td>
+                                                        <td><span class="badge text-bg-success">Active</span></td>
+                                                        <td>2022/12/25</td>
+                                                        <td>
+
+                                                               <div class="personas-container">
+                                                                      <div class="persona">
+                                                                             <img class="border"
+                                                                                    src="https://avatars.githubusercontent.com/u/68261773?s=400&u=ca09fb7c49600be35a8943b8aba05aa0256a7c84&v=4"
+                                                                                    alt="" />
+                                                                      </div>
+                                                                      <div class="persona">
+                                                                             <img class="border"
+                                                                                    src="https://avatars.githubusercontent.com/u/68261773?s=400&u=ca09fb7c49600be35a8943b8aba05aa0256a7c84&v=4"
+                                                                                    alt="" />
+                                                                      </div>
+                                                                      <div class="persona">
+                                                                             <img class="border"
+                                                                                    src="https://avatars.githubusercontent.com/u/68261773?s=400&u=ca09fb7c49600be35a8943b8aba05aa0256a7c84&v=4"
+                                                                                    alt="" />
+                                                                      </div>
+                                                                      <div class="persona">
+                                                                             <img class="border"
+                                                                                    src="https://avatars.githubusercontent.com/u/68261773?s=400&u=ca09fb7c49600be35a8943b8aba05aa0256a7c84&v=4"
+                                                                                    alt="" />
+                                                                      </div>
+                                                                      <div class="persona">
+                                                                             <img class="border"
+                                                                                    src="https://avatars.githubusercontent.com/u/68261773?s=400&u=ca09fb7c49600be35a8943b8aba05aa0256a7c84&v=4"
+                                                                                    alt="" />
+                                                                      </div>
+                                                               </div>
+
+                                                        </td>
+                                                 </tr>
+                                          </tbody>
+                                   </table>
+                            </div>
+
+
+
+                            <nav aria-label="Page navigation example">
+                                   <ul class="pagination justify-content-end">
+                                          <li class="page-item">
+                                                 <a class="page-link d-flex" href="#" aria-label="Previous">
+                                                        <span class="material-symbols-outlined">
+                                                               arrow_back
+                                                        </span>
+                                                 </a>
+                                          </li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item">
+                                                 <a class="page-link d-flex" href="#" aria-label="Next">
+                                                        <span class="material-symbols-outlined">
+                                                               arrow_forward
+                                                        </span>
+                                                 </a>
+                                          </li>
+                                   </ul>
+                            </nav>
+
+
+                            <div class="container-fluid pt-5 mt-5">
+                                   <footer class="py-5">
+
+                                          <div
+                                                 class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                                                 <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                                                 <ul class="list-unstyled d-flex">
+                                                        <li class="ms-3">
+                                                               <a class="link-secondary" href="#">
+                                                                      <span class="material-symbols-outlined">
+                                                                             public
+                                                                      </span>
+                                                               </a>
+                                                        </li>
+                                                 </ul>
+                                          </div>
+                                   </footer>
+                            </div>
+                     </div>
+
+              </div>
+
+
+
+       </div>
+
+       <!-- popper -->
+       <script src="lib/popper.min.js"></script>
+
+       <!-- bootstrap -->
+       <script src="../dist/js/bootstrap.bundle.js"></script>
+
+       <!-- app -->
+       <script src="sidebar.js"></script>
+</body>
+
+</html>
